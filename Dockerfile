@@ -1,4 +1,5 @@
-FROM harbor.qytang.com/public/centos:8
+FROM centos:8
+#FROM harbor.qytang.com/public/centos:8
 #定义启动jenkins的用户
 USER root
 
