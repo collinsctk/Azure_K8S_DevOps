@@ -11,7 +11,7 @@ RUN /bin/cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime &&\
 RUN yum install -y nginx && yum install -y python3 && yum install -y net-tools && yum install -y bind-utils && yum install -y lrzsz && yum install -y curl && yum install -y python3 && yum install -y dos2unix
 
 # 安装Python模块
-RUN pip3 install -i https://pypi.douban.com/simple/ flask
+RUN pip3 install flask
 
 # 工作目录
 WORKDIR /qytang
