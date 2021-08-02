@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: collinsctkazureksdevops 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: collinsctkazureksdevops
+  template:
+    metadata:
+      labels:
+        app: collinsctkazureksdevops 
+    spec:
+      containers:
+        - name: collinsctkazureksdevops 
+          image: qytangcontainerregistry.azurecr.io/collinsctkazureksdevops
+          ports:
+          - containerPort: 80
