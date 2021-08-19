@@ -29,7 +29,21 @@ def index():
         </html>"""
     return return_str
 
-
+@node.route('/forbiden', methods=['GET'])
+def forbiden():
+    return_str=f"""<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>乾颐堂Azure测试</title>
+        </head>
+        <body>
+        <img src="/static/qytanglogo.png"/>
+        <h3>此页面应该被WAF禁止</h3>
+        </body>
+        </html>"""
+    return return_str
+    
 if __name__ == "__main__":
     node.run(host='0.0.0.0', port=80)
 
