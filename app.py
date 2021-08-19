@@ -20,7 +20,7 @@ def index():
         <html lang="en">
         <head>
             <meta charset="UTF-8">
-            <title>Title</title>
+            <title>乾颐堂Azure测试</title>
         </head>
         <body>
         <img src="/static/qytanglogo.png"/>
