@@ -15,7 +15,19 @@ node = Flask(__name__)
 # 静态路由,最简单页面
 @node.route('/', methods=['GET'])
 def index():
-    return f"This is QYTAKS:{socket.gethostname()}, My IP is {socket.gethostbyname(socket.gethostname())}"
+#     return f"This is QYTAKS:{socket.gethostname()}, My IP is {socket.gethostbyname(socket.gethostname())}"
+    return_str=f"""<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Title</title>
+        </head>
+        <body>
+        <img src="/static/qytanglogo.png"/>
+        <h3>This is QYTAKS:{socket.gethostname()}, My IP is {socket.gethostbyname(socket.gethostname())}</h3>
+        </body>
+        </html>"""
+    return return_str
 
 
 if __name__ == "__main__":
