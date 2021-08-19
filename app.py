@@ -29,7 +29,7 @@ def index():
         </html>"""
     return return_str
 
-@node.route('/forbiden', methods=['GET'])
+@node.route('/forbidden', methods=['GET'])
 def forbiden():
     return_str=f"""<!DOCTYPE html>
         <html lang="en">
